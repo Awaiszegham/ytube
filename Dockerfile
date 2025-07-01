@@ -22,4 +22,4 @@ EXPOSE 8080
 
 # Run the app - CHANGE "app.main" to your actual Python module and app variable
 # Example: If your app is defined in main.py as `app = Flask(__name__)`, use "main:app"
-CMD ["gunicorn", "app.main:app", "--bind", "0.0.0.0:8080", "--timeout", "120"]
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:8080", "--timeout", "120"]
